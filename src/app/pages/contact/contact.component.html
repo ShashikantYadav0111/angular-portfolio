@@ -1,0 +1,43 @@
+<div class="wrapper">
+  <div class="contact-section">
+    <div class="contact-details">
+      <p class="small-paragraph" id="section-contact">Get in touch</p>
+      <h1 class="section-title">Contact</h1>
+      <div class="contact-info">
+        <p class="contact-description">
+          If you would like to discuss a project feel free
+          to reach out!
+        </p>
+        <p class="contact-detials">
+          Phone:<a [href]="'tel:' + phoneNumber">{{ phoneNumber }}</a>
+          <br />
+          Email:<a [href]="'mailto:' + email">{{ email }}</a>
+        </p>
+      </div>
+    </div>
+    <form class="contact-form" [formGroup]="contactForm">
+      <div class="form-group-contact">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" formControlName="name" />
+      </div>
+      <div class="form-group-contact">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" formControlName="email" />
+      </div>
+      <div class="form-group-contact">
+        <label for="message">Message</label>
+        <textarea
+          type="message"
+          id="message"
+          name="name"
+          rows="5"
+          formControlName="message"
+        ></textarea>
+      </div>
+      <div class="btn btn-size-1" (click)="onSubmit()">
+        <div class="hover"></div>
+        <span>Send</span>
+      </div>
+    </form>
+  </div>
+</div>
