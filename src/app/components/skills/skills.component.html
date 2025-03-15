@@ -1,0 +1,5 @@
+<div class="skill-container">
+    <div class="skill" *ngFor="let skill of skills" [style.background-color]="skill.color" [ngStyle]="{'color':'black'}">
+        <span >{{skill.name}}</span>
+    </div>
+</div>

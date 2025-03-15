@@ -5,6 +5,9 @@
 .introduction-section{
     min-width: 700px;
     width: 40vw;
+    position: absolute;
+    top:10rem;
+    margin-left: 10rem;
 }
 
 #my-role{
@@ -31,4 +34,28 @@
     margin-top: 4%;
     display: flex;
     
+}
+
+.skill-container{
+    display: flex;
+    flex-direction: row;
+    width: 40rem;
+    flex-wrap: wrap;
+}
+.skill{
+    color: white;
+    width: 6rem;
+    padding: 0.2rem;
+    margin: 0.5rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px white;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    font-weight: bolder;
+}
+.skill:hover{
+    transform: scale(1.05);
 }

@@ -7,13 +7,14 @@
     text-transform: uppercase;
     font-weight: bold;
     overflow: hidden;
-    border: 2px solid #65ffd1;
+    border: 2px solid #ffffff;
     min-width: 150px;
     padding: 15px 30px;
     margin-top: 10px;
     border-radius: 8px;
     font-size: 20px;
     z-index: 0;
+    cursor: pointer;
 }
 
 .btn .hover{
@@ -22,8 +23,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #65ffd1;
-    color: black;
+    background-color: rgb(255, 242, 4);
+    color: rgb(255, 255, 255);
     z-index: -1;
     transform: translateY(100%);
     transition: transform 0.6s cubic-bezier(0.19,1,0.22,1);
@@ -31,7 +32,7 @@
 }
 
 .btn span{
-    color: #65ffd1;
+    color: #feffff;
     user-select: none;
 }
 
@@ -45,5 +46,5 @@
 }
 
 .btn:hover span{
-    color: rgb(0, 0, 0);
+    color: rgb(3, 3, 3);
 }
